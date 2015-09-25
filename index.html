@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Smart Sparrow Coding Task</title>
+		<!--Styles & Fonts -->
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.5-dist/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="lib/rangeslider.js-1.3.3/rangeslider.css">
+	</head>
+	<body>
+		<section id="main">
+			<div id="title">Visualizing the Doppler Effect</div>
+			<div id="star-container">
+				<img id="star-image" src="img/star-star-small.png"/>
+				<div id="color-filter"></div>
+			</div> <!-- .star-container -->
+			<div id="velocity-input-container">
+				<div id="velocity-input-label">Velocity (km/s)</div>
+				<input id="velocity-input" value="0" autocomplete="off"/>
+				<button id="velocity-set-button" class="btn btn-success btn-lg">Set</button>
+				<div id="input-message">Enter a number between -100 and 100</div>
+				<div id="error-message">This velocity is not in the accepted range (-100 to 100)</div>
+			</div> <!-- .velocity-input-container -->
+			<div id="velocity-slider-container">
+				<input id="velocity-slider" type="range" min="0" value="200" step="0.01"/>
+			</div> <!-- .velocity-slider-container -->
+		</section>
+	</body>
+	<footer>
+		<!--jQuery-->
+		<script type="text/javascript" src="lib/jquery-1.11.3.js"></script>
+		<!--rangeslider.js-->
+		<script type="text/javascript" src="lib/rangeslider.js-1.3.3/rangeslider.js"></script>
+		<!--App Init-->
+		<script type="text/javascript" src="js/app.js"></script>
+	</footer>
+</html>
+
